@@ -1,3 +1,3 @@
-# Origamid
+# Origamid React
 
-Repositório referente ao curso de React da Origamid.
+Repositório referente ao curso da Origamid de React.
