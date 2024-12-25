@@ -25,11 +25,17 @@ function Livros () {
 
 
     return (
-        <>
-            <section>
-
-            </section>
-        </>
+      <section>
+         {dados.map(({id, nome, preco, cores}) => (
+          <div key={id}>
+            <h1>{nome}</h1>
+            <p>Preço: {preco}</p>
+            <ul>{cores.map((cor) => (
+              <li style={{backgroundColor: cor, color: 'white'}}>{cor}</li>
+            ))}</ul>
+          </div>
+         ))}
+      </section>
     )
 }
 
