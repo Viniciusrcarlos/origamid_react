@@ -1,10 +1,14 @@
 import React from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { UserContext } from "../../UserContext";
-import MinhasFotos from "../../Assets/feed.svg?react";
-import Estatisticas from "../../Assets/estatisticas.svg?react";
-import AdicionarFoto from "../../Assets/adicionar.svg?react";
-import Sair from "../../Assets/sair.svg?react";
+import MinhasFotos from "../../Assets/feed.svg";
+import Estatisticas from "../../Assets/estatisticas.svg";
+import AdicionarFoto from "../../Assets/adicionar.svg";
+import Sair from "../../Assets/sair.svg";
+// import { ReactComponent as MinhasFotos } from "../../Assets/feed.svg";
+// import { ReactComponent as Estatisticas } from "../../Assets/estatisticas.svg";
+// import { ReactComponent as AdicionarFoto } from "../../Assets/adicionar.svg";
+// import { ReactComponent as Sair } from "../../Assets/sair.svg";
 import styles from "./UserHeaderNav.module.css";
 import useMedia from "../../Hooks/useMedia";
 
@@ -42,19 +46,19 @@ const UserHeaderNav = () => {
         }`}
       >
         <NavLink to="/conta" end>
-          <MinhasFotos />
+          <img src={MinhasFotos}/>
           {mobile && "Minhas Fotos"}
         </NavLink>
         <NavLink to="/conta/estatisticas">
-          <Estatisticas />
+          <img src={Estatisticas}/>
           {mobile && "Estatísticas"}
         </NavLink>
         <NavLink to="/conta/postar">
-          <AdicionarFoto />
+          <img src={AdicionarFoto}/>
           {mobile && "Adicionar Foto"}
         </NavLink>
         <button onClick={handleLogout}>
-          <Sair />
+          <img src={Sair}/>
           {mobile && "Sair"}
         </button>
       </nav>

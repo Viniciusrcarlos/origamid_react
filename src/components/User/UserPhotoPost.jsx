@@ -5,7 +5,6 @@ import useFetch from "../../Hooks/useFetch";
 import Input from "../Forms/Input";
 import Button from "../Forms/Button";
 import { PHOTO_POST } from "../../Api";
-import { preview } from "vite";
 
 export const UserPhotoPost = () => {
   
